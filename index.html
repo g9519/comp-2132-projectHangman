@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <script defer src="./scripts/script.js"></script>
+    <title>Project Hangman</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Project Hangman </h1>
+      <h3>Guess the word by picking one letter at a time</h3>
+      <div id="letters-container"></div>
+        <div class="img-container">
+      <img id="hangmanImg" src="./images/Hangman-0.png" alt="/images/Hangman-0.png">
+    </div>  
+    <div id="word-container">Guessed word goes here</div>
+      <div id="hint-container hidden">
+        <p>Hint: <span id="hintinfo-container"></span> </p>
+        <p ></p>
+      </div>
+
+      <h3>Lives: <span id="lives"></span> </h3>
+      <div id="buttons-container">
+        <button id="hint-btn">Hint</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+    </div>
+
+    <section id="popup">
+      <h3>Game Over!</h3>
+      <h2 id="popup-content">game status:</h2>
+      <h4>Correct Word: <span id="popup-span"></span></h4>
+      <button id="playagain-btn">Play again</button>
+      
+    </section>
+  </body>
+</html>

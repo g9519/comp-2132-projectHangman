@@ -1,0 +1,141 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body{
+    padding-top: 60px;
+    background-color: #73877B;
+}
+/* 
+img{
+    width: 51px;
+    height: 51px;
+} */
+
+.container{
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fbd5b2;
+    box-shadow: rgb(23, 63, 77) -2px 6px 18px 3px;
+    padding: 50px;
+    border-radius: 10%;
+}
+
+.players{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.diceContainer
+{
+    display: flex;
+}
+.dice{
+    border-radius: 15%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(248, 255, 240);
+    margin: 25px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+button{
+    margin-top: 30px;
+    border: solid .5px;
+    padding: 20px;
+    font-size: 18px;
+    /* height: 40px; */
+    color: #173f4d;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#rollbtn:disabled{
+    /* background-color: #73877B;
+    color: #173f4d8b; */
+        display: none;
+
+}
+
+#rollbtn, #newGamebtn{
+    background-color: #f36767;
+}
+
+#newGamebtn{
+    /* background-color: #f36767; */
+}
+
+#newGamebtn:disabled{
+        display: none;
+
+}
+
+
+button:hover{
+    background-color: #f367679f;
+}
+
+button:disabled{
+    pointer-events: none;
+    background-color: #73877B;
+}
+
+.active{
+    box-shadow: rgb(23, 63, 77) 0px 6px 5px 3px;
+}
+
+#popup{
+    width: 400px;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    background-color: #f36767;
+    color: #fbd5b2;
+    padding: 10px;
+    border: solid 1px #173f4d;
+    border-radius: 10px;
+    font-family: sans-serif;
+    /* display: none; */
+}
+
+#closePopUp{
+    position: absolute;
+    top: 85%;
+    right: 25%;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#popup a{
+    background-color: #73877B;
+    color: #173f4d;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+#popup a:hover{
+    background-color: #fbd5b2;
+}
+.letterBtn.disabled{
+    pointer-events: none;
+    background-color: #73877B;
+}
+/* .disabled{
+    pointer-events: none;
+    background-color: #73877B;
+}
+
+#disabled{
+    pointer-events: none;
+} */
